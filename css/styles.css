@@ -206,18 +206,22 @@ button {
 .contack-link {
   display: flex;
 }
+.item:hover {
+  fill: var(--third-text-color);
+}
 .icon-mail {
   height: 16px;
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
+
 .icon-mail:hover {
   fill: var(--third-text-color);
 }
 .icon-phone {
   height: 16px;
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 .icon-phone:hover {
   fill: var(--third-text-color);
@@ -390,6 +394,7 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--primary-text-color);
 }
 .work-text {
   color: var(--second-text-color);
@@ -481,7 +486,7 @@ button {
 /*footer*/
 .address .address-link,
 .address-contact {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -491,18 +496,20 @@ button {
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
+  height: 252px;
 }
 .address-link {
   color: var(--primary-white-color);
 }
 .address-contact {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .address-list .address-link:hover,
 .address-list .address-link:focus {
   color: var(--third-text-color);
@@ -539,7 +546,8 @@ button {
 .flex-element-item:hover,
 .flex-element-item:focus {
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 0px solid #eeeeee;
+  cursor: pointer;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -553,8 +561,9 @@ button {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-  color: var(--header-color);
   margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--header-color);
 }
 .footer-social {
   display: flex;
@@ -568,7 +577,6 @@ button {
 .social-link-dark {
   width: 100%;
   height: 100%;
-  background-color: var(--header-color);
   border-radius: 50%;
   display: flex;
   padding: 12px;
